@@ -1,0 +1,3 @@
+litellm_settings:
+  # set_verbose: True  # Uncomment this if you want to see verbose logs; not recommended in production
+  drop_params: True
