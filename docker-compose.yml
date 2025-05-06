@@ -75,10 +75,12 @@ services:
       args:
         target: runtime
     image: ghcr.io/berriai/litellm:main-stable
+    restart: always
     #########################################
     ## Uncomment these lines to start proxy with a config.yaml file ##
     volumes:
       - ./config.yaml:/app/config.yaml
+      - ./custom_callbacks.py:/app/custom_callbacks.py
     command:
       - "--config=/app/config.yaml"
     ##############################################
