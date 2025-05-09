@@ -1,6 +1,6 @@
 litellm_settings:
   # set_verbose: True  # Uncomment this if you want to see verbose logs; not recommended in production
-  drop_params: True
+  # drop_params: True
   callbacks: custom_callbacks.proxy_handler_instance
 general_settings:
   store_model_in_db: true

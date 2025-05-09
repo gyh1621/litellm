@@ -31,6 +31,9 @@ class OverrideReasonEffort(CustomLogger): # https://docs.litellm.ai/docs/observa
                 "effort": "high",
                 "summary": "detailed"
             }
+        #
+        # if data.get("tools") is not None:
+        #     data['tool_choice'] = 'required'
         return data 
 
     async def async_post_call_failure_hook(
