@@ -262,6 +262,9 @@ def image_generation(  # noqa: PLR0915
             "quality",
             "size",
             "style",
+            "input_fidelity",
+            "background",
+            "output_format",
         ]
         litellm_params = all_litellm_params
         default_params = openai_params + litellm_params

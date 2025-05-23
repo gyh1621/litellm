@@ -1051,7 +1051,7 @@ all_embedding_models = (
 )
 
 ####### IMAGE GENERATION MODELS ###################
-openai_image_generation_models = ["dall-e-2", "dall-e-3"]
+openai_image_generation_models = ["dall-e-2", "dall-e-3", "gpt-image-1"]
 
 ####### VIDEO GENERATION MODELS ###################
 openai_video_generation_models = ["sora-2"]
