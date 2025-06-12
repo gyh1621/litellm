@@ -27,10 +27,7 @@ class OverrideReasonEffort(CustomLogger): # https://docs.litellm.ai/docs/observa
             return data
 
         if (data["model"] == "o3" or data["model"] == "o3-mini" or data["model"] == "o4-mini") and data.get("reasoning") is None:
-            data["reasoning"] = {
-                "effort": "high",
-                "summary": "detailed"
-            }
+            data["reasoning_effort"] = "high"
         # if data.get("tools") is not None:
         #     data['tool_choice'] = 'required'
         return data 
